@@ -1,17 +1,16 @@
 import React from 'react';
+import photo  from '../resources/photo.jpg';
 
 export default function InfoBlock(){
   return(
     <div className = 'info'>
-      <img alt="proPic"/>
+      <img src= { photo }alt="proPic"/>
 
       <article className="aboutInfo">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <h1>This is Carlos Abdu</h1>
+        <h2>He knows how to draw</h2>
+        <h2>He knows how to code</h2>
+        <p>  Has skills in writing, editing, media editing, photography,  data organization, streaming, podcasting, interpretive dancing, kazoo playing & ranting with a minor doctorate in general clowning around.</p>
       </article>
 
 

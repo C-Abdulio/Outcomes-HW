@@ -1,32 +1,146 @@
+#root{
+  background: url("./resources/bg.jpeg") 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+i {
+  font-size: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* This is for the Nav Bar */
+
+.Nav{
+  background-color: black;
   color: white;
+  padding:20px;
 }
 
-.App-link {
-  color: #61dafb;
+.Nav nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+/* all the buttons on the nav bar */
+
+nav > div{
+  justify-content: space-around;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* all the boxes that house the writing */
+
+.info{
+  border:solid black 3px;
+  margin:30px;
+  padding:20px;
+  width:80%;
+  height: 400px;
+  display:flex;
+  background-color:white;
+
+}
+
+.exhibit{
+  border:solid black 3px;
+  background-color:white;
+  margin:30px;
+  padding:20px;
+  max-width:80rem;
+  max-height:400px;
+  font-weight: bold;
+}
+
+.exhibit img{
+  width: 50%;
+  height: 50%;
+}
+
+.info img{
+  width: 300px;
+  height: 300px;
+}
+
+.info article{
+  font-size: x-large;
+}
+
+/* the component for the resume */
+
+ .resBlok{
+   margin:30px auto;
+   padding:20px;
+   display:flex;
+   justify-content: center;
+   border: solid black 1px;
+
+}
+
+.resBlok img{
+  /* margin: 30px; */
+  width: 100%;
+  height: 100;
+  box-shadow: rgba(0, 0, 0, 0.5) 6px 5px;
+  border-radius: 10px;
+}
+
+.resBlok h2{
+  color:red;
+}
+
+/* the divs for the code imagery */
+
+#skillBlok{
+  margin: 10px;
+  padding: 20px;
+  background-color: rgba(200, 200, 200, 0.8);
+  border: solid black 3px;
+}
+
+.codeBlock{
+  justify-content: space-around;
+}
+
+
+.slideShow img {
+  width: 100%;
+  height: 100%;
+}
+/* the footer */
+
+.footer{
+  background-color: red;
+  color:white;
+  display:flex;
+  flex-direction:row;
+  justify-content: flex-end;
+  justify-content: space-around;
+  height: 100%;
+  margin-top: 0;
+  position:static;
+}
+
+.footer p{
+  justify-content: space-around;
+}
+
+span{
+  font-weight: bold;
+}
+
+span > #one{
+  font-size: 60pt;
+}
+
+span > #two{
+  font-size: 50pt;
+}
+
+.social > a{
+  text-decoration: none;
+  color:white;
+  margin:5px;
 }
