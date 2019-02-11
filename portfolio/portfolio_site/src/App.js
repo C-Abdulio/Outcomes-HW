@@ -7,7 +7,7 @@ import Project1 from './components/Project1';
 import Project2 from './components/Project2';
 import Project3 from './components/Project3';
 import Project4 from './components/Project4';
-import Gallery from './components/Gallery';
+import Slider from './components/Gallery/slider';
 import './App.css';
 
 class App extends Component {
@@ -31,7 +31,7 @@ class App extends Component {
       case 'artfinga':
       return <Project4 />
       case 'gallery':
-      return <Gallery />
+      return <Slider />
       default:
       return <Resume />
     }

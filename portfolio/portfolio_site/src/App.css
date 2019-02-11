@@ -1,4 +1,4 @@
-#root{
+#root {
   background: url("./resources/bg.jpeg") 20%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8,78 +8,104 @@
   text-align: center;
 }
 
-i {
-  font-size: 40px;
-}
-
 /* This is for the Nav Bar */
 
-.Nav{
+.Nav {
   background-color: black;
   color: white;
-  padding:20px;
+  padding: 20px;
 }
 
-.Nav nav{
+.Nav nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 /* all the buttons on the nav bar */
 
-nav > div{
+nav > div:default {
   justify-content: space-around;
+}
+
+nav > div:active{
+  color: red;
+  font-weight: bold;
+  transition: 0.3s;
+  font-size: 20px;
+  text-align: center;
 }
 
 /* all the boxes that house the writing */
 
-.info{
-  border:solid black 3px;
-  margin:30px;
-  padding:20px;
-  width:80%;
+.info {
+  border: solid black 3px;
+  margin: 30px;
+  padding: 20px;
+  width: 80%;
   height: 400px;
-  display:flex;
-  background-color:white;
-
+  display: flex;
+  background-color: white;
 }
 
-.exhibit{
-  border:solid black 3px;
-  background-color:white;
-  margin:30px;
-  padding:20px;
-  max-width:80rem;
-  max-height:400px;
+.exhibit {
+  border: solid black 3px;
+  background-color: white;
+  margin: 30px;
+  padding: 20px;
+  /* max-width: 80rem;
+  max-height: 400px; */
   font-weight: bold;
 }
 
-.exhibit img{
+.line{
+  border:black solid 1px;
+}
+
+.exhibit article {
+  padding:10px;
+  margin:10px;
+}
+
+.exhibit img {
   width: 50%;
   height: 50%;
 }
 
-.info img{
-  width: 300px;
-  height: 300px;
+.info img {
+  flex: 1;
+  margin: 5px;
+  /* border: solid black; */
+  width: 50%;
+  height: 100%;
 }
 
-.info article{
+.aboutInfo {
+  flex: 1;
+  border: black solid;
+}
+#declare {
   font-size: x-large;
+  margin: 10px;
+  border:black solid;
+}
+
+.aboutInfo p {
+  border: black solid;
+  margin: 10px;
+  font-size:large;
 }
 
 /* the component for the resume */
 
- .resBlok{
-   margin:30px auto;
-   padding:20px;
-   display:flex;
-   justify-content: center;
-   border: solid black 1px;
-
+.resBlok {
+  margin: 30px auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  border: solid black 1px;
 }
 
-.resBlok img{
+.resBlok img {
   /* margin: 30px; */
   width: 100%;
   height: 100;
@@ -87,60 +113,107 @@ nav > div{
   border-radius: 10px;
 }
 
-.resBlok h2{
-  color:red;
+.resBlok h2 {
+  color: red;
 }
 
 /* the divs for the code imagery */
 
-#skillBlok{
+#skillBlok {
   margin: 10px;
   padding: 20px;
   background-color: rgba(200, 200, 200, 0.8);
   border: solid black 3px;
+  display: grid;
+  grid-template-rows: repeat(2, 4fr);
+  grid-template-columns: repeat(5, 1fr);
 }
 
-.codeBlock{
+#skillBlok h2 {
+  grid-column: 2 / span 3;
+}
+
+.codeBlock {
+  display:flex;
+  grid-column: span 5;
   justify-content: space-around;
 }
 
+#codeThing:hover{
+  color: white;
+  transition: 0.4s;
+}
 
+#codeThing{
+  transition:0.7s;
+}
+
+#codeThing i {
+  flex-direction: row;
+  font-size: 80px;
+  justify-content: space-around;
+}
+
+#codeThing i:hover {
+  font-size: 100px;
+}
+
+#codeThing > p {
+  font-weight:bold;
+}
+
+#codeThing p:hover {
+  font-size:20px;
+}
+
+/*Slideshow */
+.slideShow{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  margin:0 auto;
+}
 .slideShow img {
-  width: 100%;
-  height: 100%;
+  margin:10px;
+  width: 50%;
+  height: 50%;
 }
 /* the footer */
 
-.footer{
+.footer {
   background-color: red;
-  color:white;
-  display:flex;
-  flex-direction:row;
+  color: white;
+  display: flex;
+  flex-direction: row;
   justify-content: flex-end;
   justify-content: space-around;
   height: 100%;
   margin-top: 0;
-  position:static;
+  position: static;
 }
 
-.footer p{
+.footer p {
   justify-content: space-around;
 }
 
-span{
+.footer i {
+  font-size: 40px;
+}
+
+span {
   font-weight: bold;
 }
 
-span > #one{
+span > #one {
   font-size: 60pt;
 }
 
-span > #two{
+span > #two {
   font-size: 50pt;
 }
 
-.social > a{
+.social > a {
   text-decoration: none;
-  color:white;
-  margin:5px;
+  color: white;
+  margin: 5px;
 }

@@ -8,8 +8,9 @@ export default class Project1 extends Component{
         <img src= {title} alt="project1"/>
         <div id = "line"></div>
         <article>
-        My first ever project. A Zelda/Blerf clone developed through HTML and Javascript. Still in Development
-         <a href = "https://github.com/C-Abdulio/GA-Project1REDO-BreakfastWarrior">GIT HUB LINK</a>
+        My first ever project. A Zelda/Blerf clone developed through HTML and Javascript. Still in Development.
+        You can play a prototype test <a href = "http://stupendous-bucket.surge.sh/">HERE</a>.
+        <a href = "https://github.com/C-Abdulio/GA-Project1REDO-BreakfastWarrior">Click here to go to the Github Link</a>
         </article>
       </div>
     )
