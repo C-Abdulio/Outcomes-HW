@@ -8,7 +8,16 @@ import Project2 from './components/Project2';
 import Project3 from './components/Project3';
 import Project4 from './components/Project4';
 import Slider from './components/Gallery/slider';
+import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
+
+const NewRoute = () => {
+  return(
+   <div>
+    <p>New Route</p>
+   </div>
+  )
+}
 
 class App extends Component {
   constructor(props){
@@ -49,7 +58,10 @@ class App extends Component {
     return (
       <div className="App">
         <NavBar changeProj  = {this.setView}/>
-        <InfoBlock />
+        {/*<InfoBlock />*/}
+        <BrowserRouter>
+          <Route path="/new" component={NewRoute}/>
+        </BrowserRouter>
         {this.getView()}
         <Footer />
       </div>

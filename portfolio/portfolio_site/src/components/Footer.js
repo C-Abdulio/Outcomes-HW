@@ -6,9 +6,9 @@ export default function Footer(){
       <p>All of these projects and artwork are belongs to Me.<span id="one">Me!</span><span id= "two">MEEEEEE!!!!</span></p>
 
       <nav className = "social">
-        <a href="https://twitter.com/DaGr8_Carlos">
+        {/*<a href="https://twitter.com/DaGr8_Carlos">
           <i className="fab fa-twitter-square"></i>
-        </a>
+        </a>*/}
 
         <a href="http://www.C-Abdulio.deviantart.com">
           <i className="fab fa-deviantart"></i>

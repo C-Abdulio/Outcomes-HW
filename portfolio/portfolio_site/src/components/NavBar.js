@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { BrowserRouter, NavLink } from 'react-router-dom';
+import Landing  from '../LandingPage/Landing.js';
 
 
 export default class NavBar extends Component{
@@ -29,7 +31,11 @@ export default class NavBar extends Component{
           <div onClick = {() => this.props.changeProj('gallery')}>
             <h4>ILLUSTRATIONS</h4>
           </div>
-
+            <BrowserRouter>
+              <div>
+                <NavLink to="/new">To Home </NavLink>
+              </div>
+            </BrowserRouter>
         </nav>
       </div>
     )
