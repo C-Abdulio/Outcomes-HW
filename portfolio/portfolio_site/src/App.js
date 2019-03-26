@@ -3,21 +3,18 @@ import NavBar from './components/NavBar';
 import InfoBlock from './components/InfoBlock';
 import Footer from './components/Footer';
 import Resume from './components/Resume'
-import Project1 from './components/Project1';
-import Project2 from './components/Project2';
-import Project3 from './components/Project3';
-import Project4 from './components/Project4';
+import Projects from './components/Projects';
 import Slider from './components/Gallery/slider';
-import { BrowserRouter, Route } from 'react-router-dom';
+// import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
 
-const NewRoute = () => {
-  return(
-   <div>
-    <p>New Route</p>
-   </div>
-  )
-}
+// const NewRoute = () => {
+//   return(
+//    <div>
+//     <p>New Route</p>
+//    </div>
+//   )
+// }
 
 class App extends Component {
   constructor(props){
@@ -31,14 +28,8 @@ class App extends Component {
   getView(){//This will switch the views
   const view = this.state.currentView
     switch(view){
-      case'game':
-      return <Project1 />
-      case'react':
-      return <Project2 />
-      case 'group':
-      return <Project3 />
-      case 'artfinga':
-      return <Project4 />
+      case 'project':
+      return <Projects />
       case 'gallery':
       return <Slider />
       default:
@@ -59,9 +50,6 @@ class App extends Component {
       <div className="App">
         <NavBar changeProj  = {this.setView}/>
         {/*<InfoBlock />*/}
-        <BrowserRouter>
-          <Route path="/new" component={NewRoute}/>
-        </BrowserRouter>
         {this.getView()}
         <Footer />
       </div>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import group from "../resources/groupproject.png"
+import group from "../resources/groupproject.png";
 export default class Project3 extends Component{
   render(){
     return(

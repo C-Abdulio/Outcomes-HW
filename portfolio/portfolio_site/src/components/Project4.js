@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from "../resources/Artfinga-Logo-Color.png"
-import screenshot from '../resources/ScreenShot.png'
+import screenshot from '../resources/ScreenShot.png';
 
 export default class Project4 extends Component{
   render(){
