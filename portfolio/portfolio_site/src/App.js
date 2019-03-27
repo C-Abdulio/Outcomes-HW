@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import NavBar from './components/NavBar';
 import InfoBlock from './components/InfoBlock';
 import Footer from './components/Footer';
-import Resume from './components/Resume'
+// import Resume from './components/Resume';
+import Modal from './components/Modal.js';
 import Projects from './components/Projects';
 import Slider from './components/Gallery/slider';
 // import { BrowserRouter, Route } from 'react-router-dom';
@@ -32,8 +33,10 @@ class App extends Component {
       return <Projects />
       case 'gallery':
       return <Slider />
+      case 'resume':
+      return <Modal />
       default:
-      return <Resume />
+      return <InfoBlock showModal = {this.setView}/>
     }
   }
 
@@ -49,7 +52,6 @@ class App extends Component {
     return (
       <div className="App">
         <NavBar changeProj  = {this.setView}/>
-        {/*<InfoBlock />*/}
         {this.getView()}
         <Footer />
       </div>

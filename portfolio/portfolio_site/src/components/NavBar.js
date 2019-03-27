@@ -8,7 +8,7 @@ export default class NavBar extends Component{
     return(
       <div className = "Nav">
         <nav>
-          <div onClick = {() => this.props.changeProj('resume')}>
+          <div onClick = {() => this.props.changeProj('')}>
             <h4>HOME</h4>
           </div>
 
