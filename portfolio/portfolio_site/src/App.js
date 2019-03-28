@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import Modal from './components/Modal.js';
 import Projects from './components/Projects';
 import Slider from './components/Gallery/slider';
-// import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
 
 // const NewRoute = () => {
@@ -29,7 +29,7 @@ class App extends Component {
   getView(){//This will switch the views
   const view = this.state.currentView
     switch(view){
-      case 'project':
+      case 'projects':
       return <Projects />
       case 'gallery':
       return <Slider />
