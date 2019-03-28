@@ -1,6 +1,8 @@
 import React from 'react';
 import photo  from '../resources/NewPortrait.png';
-import Modal from './Modal.js';
+// import Modal from './Modal.js';
+import Resume from './Resume.js';
+
 
 export default function InfoBlock(props){
   return(
@@ -8,7 +10,7 @@ export default function InfoBlock(props){
       <img
       src= { photo }
       alt="proPic"
-      onClick = {() => <Modal />}
+      onClick = { () => <Resume />}
       />
 
       <article className="aboutInfo">

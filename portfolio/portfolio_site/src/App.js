@@ -18,43 +18,17 @@ import './App.css';
 // }
 
 class App extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      currentView: ''
-    }
-    this.setView = this.setView.bind(this)
-  }
-
-  getView(){//This will switch the views
-  const view = this.state.currentView
-    switch(view){
-      case 'projects':
-      return <Projects />
-      case 'gallery':
-      return <Slider />
-      case 'resume':
-      return <Modal />
-      default:
-      return <InfoBlock showModal = {this.setView}/>
-    }
-  }
-
-  setView(view){
-    this.setState({
-      currentView: view
-    })
-  }
-
-
-
   render() {
     return (
+      <BrowserRouter>
       <div className="App">
-        <NavBar changeProj  = {this.setView}/>
-        {this.getView()}
+        <NavBar/>
+        <Route exact path ="/" component={InfoBlock}/>
+        <Route path ="/projects" component={Projects}/>
+        <Route path ="/gallery" component={Slider}/>
         <Footer />
       </div>
+      </BrowserRouter>
     );
   };
 }
