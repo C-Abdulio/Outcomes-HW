@@ -19,11 +19,11 @@ export default class NavBar extends Component{
           <div onClick = {() => this.props.changeProj('gallery')}>
             <h4>ILLUSTRATIONS</h4>
           </div>
-            <BrowserRouter>
+            {/*<BrowserRouter>
               <div>
                 <NavLink to="/new">To Home </NavLink>
               </div>
-            </BrowserRouter>
+            </BrowserRouter>*/}
         </nav>
       </div>
     )

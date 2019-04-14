@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import NavBar from './components/NavBar';
 import InfoBlock from './components/InfoBlock';
 import Footer from './components/Footer';
-// import Resume from './components/Resume';
-import Modal from './components/Modal.js';
+import Resume from './components/Resume';
+// import Modal from './components/Modal.js';
 import Projects from './components/Projects';
 import Slider from './components/Gallery/slider';
-import { BrowserRouter, Route } from 'react-router-dom';
+// import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
 
 // const NewRoute = () => {
@@ -33,8 +33,8 @@ class App extends Component {
       return <Projects />
       case 'gallery':
       return <Slider />
-      case 'resume':
-      return <Modal />
+      // case 'resume':
+      // return <Modal />
       default:
       return <InfoBlock showModal = {this.setView}/>
     }
