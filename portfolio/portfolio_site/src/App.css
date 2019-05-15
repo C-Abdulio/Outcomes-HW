@@ -26,27 +26,46 @@
 
 .Nav {
   background-color: black;
-  color: white;
   padding: 20px;
-}
-
-.Nav nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
+
+/* .Nav nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+} */
 /* all the buttons on the nav bar */
 
 nav > div:default {
   justify-content: space-around;
 }
 
-nav > div:active{
+/* nav > div:active{
   color: red;
   font-weight: bold;
   transition: 0.3s;
   font-size: 20px;
   text-align: center;
+} */
+
+.Nav a{
+  text-decoration: none;
+  color:white;
+  transition: 2s;
+}
+
+.Nav a:hover{
+  transition: 1s;
+  font-size: 15px;
+  text-align: center;
+}
+
+.Nav a:active{
+  color:red;
+
 }
 
 /* all the boxes that house the writing */

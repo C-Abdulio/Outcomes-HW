@@ -8,17 +8,17 @@ export default class NavBar extends Component{
     return(
       <div className = "Nav">
       <NavLink to='/'>
-      <p>HOME</p>
+      <h2>HOME</h2>
       </NavLink>
 
       <NavLink to='/projects'>
-      <p>PROJECTS</p>
+      <h2>PROJECTS</h2>
       </NavLink>
 
         <NavLink to='/gallery'>
-        <p>ILLUSTRATIONS</p>
+        <h2>ILLUSTRATIONS</h2>
         </NavLink>
-        
+
       </div>
     )
   }

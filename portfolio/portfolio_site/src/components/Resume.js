@@ -1,11 +1,13 @@
 import React from 'react';
-import  resume  from '../resources/Creddle _ Resume__2019.png';
+// import  resume  from '../resources/Creddle _ Resume__2019.png';
 
 export default function Resume(){
   return(
     <div className="resBlok">
       <form className = "resume">
-        <img src={ resume } alt="resume" />
+      <iframe alt="resume" src="https://resume.creddle.io/embed/fvlqgr4nh97"
+  width="850" height="1100" seamless></iframe>
+         {/*<img src={ resume } alt="resume" />*/}
         <div id="skillBlok">
          <h2>Carlos knows the following fancy doodads</h2>
              <div className="codeBlock">
