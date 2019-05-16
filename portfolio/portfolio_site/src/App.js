@@ -6,8 +6,9 @@ import Footer from './components/Footer';
 import Modal from './components/Modal.js';
 import Projects from './components/Projects';
 import Slider from './components/Gallery/slider';
-import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
+import { Route, Switch } from 'react-router-dom';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 // const NewRoute = () => {
 //   return(
@@ -20,15 +21,22 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
       <div className="App">
         <NavBar/>
-        <Route exact path ="/" component={InfoBlock}/>
-        <Route path ="/projects" component={Projects}/>
-        <Route path ="/gallery" component={Slider}/>
+        <TransitionGroup>
+          <CSSTransition
+            timeout={300}
+            classNames="fade"
+          >
+          <Switch>
+            <Route exact path ="/" component={InfoBlock}/>
+            <Route path ="/projects" component={Projects}/>
+            <Route path ="/gallery" component={Slider}/>
+          </Switch>
+          </CSSTransition>
+        </TransitionGroup>
         <Footer />
       </div>
-      </BrowserRouter>
     );
   };
 }

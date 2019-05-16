@@ -7,18 +7,17 @@ export default class NavBar extends Component{
   render(props){
     return(
       <div className = "Nav">
-      <NavLink to='/'>
+      <NavLink to='/' activeClassName= "active">
       <h2>HOME</h2>
       </NavLink>
 
-      <NavLink to='/projects'>
-      <h2>PROJECTS</h2>
+      <NavLink to='/projects' activeClassName= "active">
+        <h2>PROJECTS</h2>
       </NavLink>
 
-        <NavLink to='/gallery'>
+      <NavLink to='/gallery' activeClassName= "active">
         <h2>ILLUSTRATIONS</h2>
-        </NavLink>
-
+      </NavLink>
       </div>
     )
   }
