@@ -210,14 +210,22 @@ nav > div:default {
 /*Slideshow */
 .slideShow{
   display:flex;
-  flex-direction: column;
+  flex-flow: wrap;
   justify-content: center;
   margin:0 auto;
 }
 .slideShow img {
+  flex-flow:wrap;
   margin:10px;
   width: 50%;
   height: 50%;
+  transition:2s;
+}
+
+.slideShow img:hover{
+  width:100%;
+  height:50%;
+  transition:2s;
 }
 /* the footer */
 
