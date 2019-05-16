@@ -6,6 +6,7 @@ import Resume from './Resume.js';
 
 export default function InfoBlock(props){
   return(
+  <div>
     <div className = 'info'>
       <img
       src= { photo }
@@ -25,7 +26,8 @@ export default function InfoBlock(props){
           <h1>Click on my handsome mug for my credentials</h1>
         </div>
       </article>
-    </div>,
-    <Resume />
+    </div>
+      <Resume />
+    </div>
   )
 }
